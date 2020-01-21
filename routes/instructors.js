@@ -14,7 +14,7 @@ router.get('/classes', function(req,res,next){
 });
 
 
-router.post('/classes/register', function(req,res){
+router.post('/classes/register', function(req,res,next){
 	info = [];
 	info['instructor_username'] = req.user.username;
 	info['class_id'] = req.body.class_id;
